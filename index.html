@@ -1,233 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .sidenav {
-        height: 70%; /* Full-height: remove this if you want "auto" height */
-        /* Set the width of the sidebar */
-        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        left: 0;
-        /* background-color: #111;  */
-        overflow-x: hidden;
-        padding-top: 20px;
-        position: relative; 
-      }
 
-      /* Style page content */
-      .main {
-        margin-left: 160px;
-        padding: 0px 10px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Sign In & Sign Up Form</title>
+</head>
 
-      /* select tag */
-      #cars {
-        width: 140px;
-        background-color: rgb(218, 209, 209);
-        height: 40px;
-        margin-bottom: 20px;
-      }
-
-      /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-      @media screen and (max-height: 450px) {
-        .sidenav {
-          padding-top: 15px;
-        }
-        .sidenav a {
-          font-size: 18px;
-        }
-      }
-
-      /* total of sidebar */
-
-      .total {
-        width: 100%;
-        /* background-color: blueviolet; */
-
-        display: flex;
-      }
-      .sidenav {
-        width: 15%;
-        /* background-color: red; */
-        margin-right: 17px;
-      }
-      .sub2 {
-        width: 85%;
-        height: 480px;
-        /* background-color: aqua  ; */
-        display: flex;
-      }
-
-      /* watch blocks */
-
-      .bk1,
-      .bk2,
-      .bk3 {
-        width: 32%;
-        justify-content: center;
-        border: 1px solid rgb(77, 73, 73);
-      }
-      .bk1 {
-        /* background-color: gray; */
-        height: 100%;
-        margin-right: 17px;
-      }
-
-      .bk3 {
-        /* background-color: blue; */
-        height: 100%;
-        margin-right: 18px;
-      }
-      .bk2 {
-        /* background-color: peru; */
-        margin-right: 18px;
-      }
-      /* adding the images */
-      .bk1_img1 {
-        background-image: url("https://staticimg.titan.co.in/Fastrack/Catalog/38085PP02_1.jpg?impolicy=pqmed&imwidth=640");
-        width: 100%;
-        height: 80%;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
-      .bk1_img2 {
-        background-image: url("https://staticimg.titan.co.in/Fastrack/Catalog/3247SL01_1.jpg?impolicy=pqmed&imwidth=640");
-        width: 100%;
-        height: 80%;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
-      .bk1_img3 {
-        background-image: url("https://staticimg.titan.co.in/Fastrack/Catalog/3147KM01_1.jpg?impolicy=pqmed&imwidth=640");
-        width: 100%;
-        height: 80%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-right: 18px;
-      }
-
-      /* text after img */
-      .wname {
-        font-size: 14px;
-        margin-top: 2px;
-      }
-
-      .price {
-        padding-top: 2px;
-        font-size: 16px;
-        color: rgb(87, 85, 85);
-      }
-      .buybtn {
-        width: 90px;
-        margin: auto;
-        height: 30px;
-        background-color: gray;
-        color: white;
-      }
-      .buybtn:hover {
-        background-color: white;
-        color: gray;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="total">
-      <div class="sidenav sub1" align="center">
-        <select name="Gender" id="cars" aria-placeholder="Gender">
-          <option value="gender" disabled selected>GENDER</option>
-          <option value="audi">Male</option>
-          <option value="audi">Female</option>
-        </select>
-
-        <select name="cars" id="cars">
-          <option value="price" disabled selected>PRICE</option>
-          <option value="audi">1000 - 5000</option>
-          <option value="audi">5000 - 10,000</option>
-          <option value="audi">10,000 - 15,000</option>
-          <option value="audi">20,000 - 25,000</option>
-          <option value="audi">25,000 - 30,000</option>
-          <option value="audi">35,000 - 40,000</option>
-        </select>
-
-        <select name="cars" id="cars">
-          <option value="gender" disabled selected>DISCOUNT</option>
-          <option value="audi">10% - 20%</option>
-          <option value="audi">10% - 25%</option>
-          <option value="audi">20% - 45%</option>
-          <option value="audi">20% - 50%</option>
-          <option value="audi">50% - 75%</option>
-          <option value="audi">10% - 50%</option>
-        </select>
-
-        <select name="cars" id="cars">
-          <option value="gender" disabled selected>AVILABILITY</option>
-          <option value="audi">Analogue Watches</option>
-          <option value="audi">Digital Watches</option>
-          <option value="audi">Waterproof</option>
-          <option value="audi">SmartWatch</option>
-          <option value="audi">Solar Watches</option>
-          <option value="audi">Quartz Watches</option>
-        </select>
-
-        <select name="cars" id="cars">
-          <option value="gender" disabled selected>DIAL SHAPE</option>
-          <option value="audi">Contemporary</option>
-          <option value="audi">Curved</option>
-          <option value="audi">Oval</option>
-          <option value="audi">Rectangle</option>
-          <option value="audi">Round</option>
-          <option value="audi">Square</option>
-          <option value="audi">Tonneau</option>
-        </select>
-
-        <select name="cars" id="cars">
-          <option value="gender" disabled selected>CUSTOMER RATING</option>
-
-          <option value="audi">
-            <span class="fa fa-star checked"></span>4.0 & above
-          </option>
-          <option value="audi">3.0 & above</option>
-          <option value="audi">2.0 & above</option>
-          <option value="audi">1.0 & above</option>
-        </select>
-      </div>
-
-      <div class="sub2" align="center">
-        <div class="bk1">
-          <div class="bk1_img1"></div>
-          <h3 class="wname" style="margin-bottom: 0; margin: 4px">
-            FASTRACK REFLEX PLAY + CLASSIC BT CALLING 1.3 AMOLED DISPLAY
-          </h3>
-          <h2 style="margin: 0" class="price">₹ 2000</h2>
-
-          <button style="margin: auto" class="buybtn">Buy Now</button>
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form>
+        <h1>Sign Up</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social"><i class="fab fa-google"></i></a>
+          <a href="#" class="social"><i class="fab fa-twitter"></i></a>
         </div>
-        <div class="bk2">
-          <div class="bk1_img2"></div>
-
-          <h3 class="wname" style="margin-bottom: 0; margin: 4px">
-            FASTRACK REFLEX PLAY + CLASSIC BT CALLING 1.3 AMOLED DISPLAY
-          </h3>
-          <h2 style="margin: 0" class="price">₹ 2000</h2>
-
-          <button style="margin: auto" class="buybtn">Buy Now</button>
+        <span>or use your email for registration</span>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button onclick="return false;">Sign Up</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form>
+        <h1>Log In</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social"><i class="fab fa-google"></i></a>
+          <a href="#" class="social"><i class="fab fa-twitter"></i></a>
         </div>
-        <div class="bk3">
-          <div class="bk1_img3"></div>
-          <h3 class="wname" style="margin-bottom: 0; margin: 4px">
-            FASTRACK REFLEX PLAY + CLASSIC BT CALLING 1.3 AMOLED DISPLAY
-          </h3>
-          <h2 style="margin: 0" class="price">₹ 2000</h2>
+        <span>or use your account</span>
+        <input type="email" placeholder="Username" id="un" />
+        <input type="password" placeholder="Password" id="pwd" />
+        <a href="#">Forgot your password?</a>
 
-          <button style="margin: auto" class="buybtn">Buy Now</button>
+        <button onclick="submitForm()">Sign In</button>
+      </form>
+    </div>
+
+
+    
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>Please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start your journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  <script src="login.js">
+
+  </script>
+</body>
+
 </html>
