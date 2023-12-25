@@ -1,130 +1,157 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-.team-member {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 150px;
-    margin: 20px;
-   
+/* .team-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 150px;
+  margin: 20px;
+ 
 }
 
 img {
-    max-width: 300px;
-    width: 300px;
-    border-radius: 50%;
-    margin-right: 50px;
-    height: 250px;
+  max-width: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 50px;
+  height: 250px;
 }
 
 .member-info {
-    max-width: 400px;
-    margin-right: 200px;
-    margin-left: 120px;
-}
+  max-width: 400px;
+  margin-right: 200px;
+  margin-left: 120px;
+} */
 
 .animated-text {
-    animation: slideIn 1.5s ease-in-out forwards;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-  @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  .animated-text{
-    margin-bottom: 10px;
-    font-size: 24px;
-  }
+.animated-text{
+  margin-bottom: 10px;
+  font-size: 24px;
+}
 
-  /* navbar */
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 12px;
-    
+/* navbar */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  
 
 }
-        .nav1 {
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #020122;
-  /* border: 1px solid black; */
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
-  
-  align-items: center;
+      .nav1 {
+padding-left: 30px;
+padding-right: 30px;
+background-color: #020122;
+/* border: 1px solid black; */
+/* padding-top: 10px;
+padding-bottom: 10px; */
+
+align-items: center;
 }
 .mnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 .logo {
-  font-size: 34px;
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
-  font-weight: bolder;
-  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+font-size: 34px;
+/* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+font-weight: bolder;
+/* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 }
 
 li {
-  list-style: none;
-  display: inline-block;
+list-style: none;
+display: inline-block;
 }
 .ullist li a {
-  margin-right: 26px;
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
+margin-right: 26px;
+text-decoration: none;
+color: white;
+font-size: 18px;
 }
 
 .ullist a:hover{
-    color: #ff6000;
-    font-weight: bolder;
-   
+  color: #ff6000;
+  font-weight: bolder;
+ 
 }
 
 .sign {
-  width: 70px;
-  height: 30px;
-  background-color: black;
-  color: white;
-  font-size: 15px;
-  font-weight: bolder;
+width: 70px;
+height: 30px;
+background-color: black;
+color: white;
+font-size: 15px;
+font-weight: bolder;
 }
 .sign:hover {
-  background-color: white;
-  color: black;
+background-color: white;
+color: black;
 }
 
 .login-icon
 {
-    width: 40px;
-    height: 40px;
-    
+  width: 40px;
+  height: 40px;
+  
 }
 /* login icon */
 
 /* location */
 .location-city .city-select{
-    width: 120px;
-    margin-left: 10px;
+  width: 120px;
+  margin-left: 10px;
 }
+
+
+/* content about us
+*/
+
+.main{
+  width: 60%;
+  height: auto;
+}
+
+#about{
+  font-size: 24px;
+  padding: 25px ;
+  font-weight: bolder;
+
+}
+
+.abt p{
+  font-size: 14px;
+  align-items: center;
+  text-align: justify;
+  padding: 4px;
+  line-height: 20px;
+}
+
+
+
